@@ -8,7 +8,7 @@ export const headline = 'Undergraduate at NUFE.'
 export const introduction =
   "Coucou Les Amis! My name is Derek Hu. I'm from Hubei and an alumnus of BUPT, UChicago, and Tsinghua. I’ve been teaching Computer Science at SCLS since 2020."
 export const email = 'tong.hu@scls-sh.org'
-export const githubUsername = 'derekhut'
+export const githubUsername = 'Huuyx'
 
 // about page
 export const aboutMeHeadline = 'Who Are You and Why Should I Care?'
