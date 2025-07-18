@@ -2,7 +2,6 @@
 export type ProjectItemType = {
   name: string
   description: string
-  link: { href: string; label: string }
   tags: string[]
 }
 
@@ -20,47 +19,46 @@ export const awardsIntro = "Recognition for academic and professional achievemen
 
 export const awards: Array<ActivityItemType> = [
   {
-    name: 'Outstanding Teacher Award',
+    name: 'First Prize for Academic Excellence (School Level)',
     description: '',
-    date: '2024',
-    location: 'SCLS, Shanghai',
+    date: '2025',
+    location: 'NUFE',
   },
   {
-    name: 'Zhui Ying Award',
+    name: 'First Prize in National Collegiate Statistics Modeling Contest (Provincial Level)',
     description: '',
-    date: '2023',
-    location: 'Qingpu, Shanghai',
+    date: '2025',
+    location: 'NUFE',
+  },
+  {
+    name: 'Second Prize of Jiangsu Mathematics Competition',
+    description: '',
+    date: '2025',
+    location: 'NUFE',
+  },
+  {
+    name: 'Third Prize in Python Category of Blue Bridge Cup (Provincial Level)',
+    description: '',
+    date: '2025',
+    location: 'NUFE',
+  },
+  {
+    name: 'Third Prize in May Day Mathematical Modeling Competition',
+    description: '',
+    date: '2025',
+    location: 'NUFE',
   },
 ]
 
 // Research & Projects
 export const projectHeadLine = "Research & Projects"
-export const projectIntro = "Academic research and technical projects I've worked on."
+export const projectIntro = "Academic research and technical projects."
 
 export const projects: Array<ProjectItemType> = [
   {
-    name: 'Student Final Project Portfolio',
-    description: 'Static website portfolio',
-    link: { href: 'scls-cs.com', label: 'GitHub Cards' },
-    tags: ['Website', 'Next.js', 'TailwindCSS', 'DaisyUI', 'Portfolio']
-  },
-  {
-    name: 'Seeking DNA',
-    description: '2022 SCLS Hackathon',
-    link: { href: 'https://scls-cs.gitbook.io/scls-apcs-lab/lab5-dna', label: 'Hackathon' },
-    tags: ['Hackathon', 'Java']
-  },
-  {
-    name: 'Texas Holdem Poker Judge',
-    description: '2024 SCLS Hackathon',
-    link: { href: 'https://onecompiler.com/challenges/42yf4n5yn/scls-hackathon', label: 'Hackathon' },
-    tags: ['Hackathon']
-  },
-  {
-    name: 'AI Camp Course Development',
-    description: 'Developed a comprehensive AI curriculum for high school students, incorporating real-world projects and startup concepts.',
-    link: { href: 'https://scls-cs.gitbook.io/ai-camp', label: 'View Course' },
-    tags: ['Education', 'AI']
+    name: 'Training Program of Innovation and Entrepreneurship For Undergraduates',
+    description: 'Scientific research literature-assisted AI large model',
+    tags: ['AI', 'LLM', 'ResearchTool']
   },
 ]
 
@@ -70,26 +68,31 @@ export const activitiesIntro = "Personal interests and community contributions."
 
 export const activities: Array<ActivityItemType> = [
   {
-    name: 'Python Workshop',
+    name: 'Machine Learning',
     description:
-      'Teaching basic Python programming concepts to beginners. Covering variables, control flow, and functions.',
-    date: '2024-02-24',
-    location: 'Shanghai',
-    link: 'https://example.com/python-workshop',
+      'A branch of artificial intelligence and computer science',
+    date: '2025-03',
+    location: 'NUFE',
   },
   {
-    name: 'AI Ethics Discussion',
+    name: 'Linux',
     description:
-      'A group discussion about the ethical implications of AI development and its impact on society.',
-    date: '2024-03-01',
+      'A open-source software operating systems.',
+    date: '2025-07',
     location: 'Shanghai',
-    link: 'https://example.com/ai-ethics',
   },
   {
-    name: 'Code Review Session',
+    name: 'Data Analysis',
     description:
-      'Helping students improve their coding skills through peer code review and best practices sharing.',
-    date: '2024-03-15',
+      'Strive to solve real-life data analysis problems using numpy, pandas library, R, SQL, and machine learning.',
+    date: '2025-07',
+    location: 'Shanghai',
+  },
+  {
+    name: 'LLM',
+    description:
+      'A deep interest in building large language models and the algorithms',
+    date: '2025-07',
     location: 'Shanghai',
   },
 ]

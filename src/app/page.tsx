@@ -1,6 +1,5 @@
 import { Container } from '@/components/layout/Container'
 import Newsletter from '@/components/home/Newsletter'
-import Career from '@/components/home/Career'
 import Education from '@/components/home/Education'
 import SocialLinks from '@/components/home/SocialLinks'
 import { headline, introduction } from '@/config/infoConfig'
@@ -105,12 +104,6 @@ export default async function Home() {
             {blogList.map((blog: BlogType) => (
               <BlogCard key={blog.slug} blog={blog} titleAs='h3'/>
             ))}
-          </div>
-
-          {/* right column */}
-          <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Career />
-            <Education />
           </div>
         </div>
       </Container>

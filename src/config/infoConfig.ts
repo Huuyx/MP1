@@ -1,6 +1,6 @@
 export * from './projects'
 export * from './education'
-export * from './career'
+
 
 // personal info
 export const name = 'Huuyx'
