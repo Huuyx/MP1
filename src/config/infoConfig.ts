@@ -6,13 +6,8 @@ export * from './career'
 export const name = 'Huuyx'
 export const headline = 'Undergraduate at NUFE.'
 export const introduction =
-<<<<<<< HEAD
   "My name is Yanhao Hu, and I have been studying big data management and application in NUFE since 2024."
 export const email = 'huuyx06@gmail.com'
-=======
-  "Coucou Les Amis! My name is Derek Hu. I'm from Hubei and an alumnus of BUPT, UChicago, and Tsinghua. I’ve been teaching Computer Science at SCLS since 2020."
-export const email = 'tong.hu@scls-sh.org'
->>>>>>> 7e76e995c3eb5e21461100fff593f85e82560c8b
 export const githubUsername = 'Huuyx'
 
 // about page
