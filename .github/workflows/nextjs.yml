@@ -1,12 +1,12 @@
-# 针对 GitHub Pages 构建和部署 Next.js 站点的示例工作流
 name: Deploy Next.js site to Pages
 
 on:
+  # 确保 push 这里的缩进正确
   push:
     branches: ["main"]
+  # 允许手动触发
   workflow_dispatch:
 
-# 修复 Node.js 20 弃用警告：强制使用 Node.js 24 运行 Actions
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
@@ -26,7 +26,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 修正：添加 pnpm 识别逻辑，因为你的项目中包含 pnpm-lock.yaml
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -50,24 +49,24 @@ jobs:
             exit 1
           fi
 
-      # 如果是 pnpm 项目，需要先安装 pnpm 环境
       - name: Install pnpm
+        # 这里已修正为 steps.detect-package-manager (点号引用)
         if: steps.detect-package-manager.outputs.manager == 'pnpm'
         uses: pnpm/action-setup@v4
         with:
-          version: 9 # 或者你本地使用的版本
+          version: 9
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "24" # 升级至 Node.js 24 消除警告
+          node-version: "24"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
           static_site_generator: next
-          # 修复 TypeError：显式指向项目中的 next.config.mjs 文件
+          # 针对你的项目 MP1 的配置
           generator_config_file: ./next.config.mjs
 
       - name: Restore cache

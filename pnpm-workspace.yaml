@@ -1,2 +1,7 @@
+# 指定当前目录为工作区包
+packages:
+  - '.'
+
+# 你原有的配置保留
 onlyBuiltDependencies:
   - sharp
