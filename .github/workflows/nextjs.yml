@@ -1,10 +1,8 @@
 name: Deploy Next.js site to Pages
 
 on:
-  # 确保 push 这里的缩进正确
   push:
     branches: ["main"]
-  # 允许手动触发
   workflow_dispatch:
 
 env:
@@ -50,7 +48,6 @@ jobs:
           fi
 
       - name: Install pnpm
-        # 这里已修正为 steps.detect-package-manager (点号引用)
         if: steps.detect-package-manager.outputs.manager == 'pnpm'
         uses: pnpm/action-setup@v4
         with:
@@ -66,7 +63,7 @@ jobs:
         uses: actions/configure-pages@v5
         with:
           static_site_generator: next
-          # 针对你的项目 MP1 的配置
+          # 必须指定 .mjs 后缀，否则会报 TypeError
           generator_config_file: ./next.config.mjs
 
       - name: Restore cache
