@@ -52,7 +52,7 @@ jobs:
 
       # 如果是 pnpm 项目，需要先安装 pnpm 环境
       - name: Install pnpm
-        if: steps:detect-package-manager.outputs.manager == 'pnpm'
+        if: steps.detect-package-manager.outputs.manager == 'pnpm'
         uses: pnpm/action-setup@v4
         with:
           version: 9 # 或者你本地使用的版本
