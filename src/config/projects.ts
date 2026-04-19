@@ -48,6 +48,12 @@ export const awards: Array<ActivityItemType> = [
     date: '2025',
     location: 'NUFE',
   },
+    {
+    name: 'Third Prize in the National College Student Mathematics Competition (Provincial Level)',
+    description: '',
+    date: '2025',
+    location: 'NUFE',
+  },
 ]
 
 // Research & Projects
